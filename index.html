@@ -24,48 +24,46 @@
                     Emergency <br> Service
                 </h1>
             </div>
-            <div class="flex items-center gap-6">
-                <div
-                    class="w-[123px] h-[52px] rounded-full bg-[#F5FFF6] shadow-lg flex justify-center items-center text-white text-lg font-semibold border border-gray-200 gap-3">
+            <div class="flex flex-wrap justify-center md:justify-end items-center gap-4 md:gap-6">
+                <div class="px-4 py-2 min-w-[100px] rounded-full bg-[#F5FFF6] shadow-lg flex justify-center 
+                    items-center text-white text-sm md:text-lg font-semibold border border-gray-200 gap-2">
                     <h2 class="font-bold text-black text-xl"><span id="heart-score-board">0</span></h2><img
                         src="./assets/heart.png" class="max-h-[35px]" alt="">
                 </div>
                 <div
-                    class="w-[123px] h-[52px] rounded-full bg-[#F5FFF6] shadow-lg flex justify-center items-center text-white text-lg font-semibold border border-gray-200 gap-3">
+                    class="px-4 py-2 min-w-[100px] rounded-full bg-[#F5FFF6] shadow-lg flex justify-center items-center text-white text-lg font-semibold border border-gray-200 gap-3">
                     <h2 class="font-bold text-black text-xl"><span id="icon-score-board">0</span></h2>
                     <img src="./assets/coin.png" class="max-h-[35px]" alt="">
                 </div>
-                <div
-                    class="w-[123px] h-[52px] rounded-full bg-[#00A63E] flex justify-center items-center text-white text-lg font-semibold gap-3">
-                    <h2 class="font-semibold text-white text-xl"><span id="copy-score-board">0</span></h2>
-                    Copy
+                <div class="px-4 py-3 min-w-[110px] rounded-full bg-[#00A63E] flex justify-center items
+                    center text-white text-sm md:text-lg font-semibold">
+                    <h2 class="font-semibold text-white text-xl"><span id="copy-score-board">0</span> Copy</h2>
                 </div>
             </div>
         </div>
 
         <!-- banner section -->
 
-        <div class="max-w-[1920px] h-[240px] mx-auto bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] 
-         flex flex-col items-center justify-center text-center text-white py-4">
-
-            <img src="./assets/logo-dark.png" class="max-h-[80px] mb-4" alt="">
-            <h1 class="text-4xl font-bold mb-4">Emergency Service Directory</h1>
-            <p class="font-semibold text-lg">Government Emergency Services at Your Fingertip – A Project by Government
-                of the
-                People’s Republic of Bangladesh</p>
+        <div class="max-w-[1920px] h-[160px] md:h-[240px] mx-auto bg-gradient-to-r from-[#013223] 
+        via-[#006747] to-[#013223]  
+         flex flex-col items-center justify-center text-center text-white px-3 py-4">
+            <h1 class="text-2xl md:text-4xl font-bold mb-2 md:mb-4">Emergency Service Directory</h1>
+            <p class="font-semibold text-sm md:text-lg">Government Emergency Services at Your
+                Fingertip – A Project by Government
+                of the People’s Republic of Bangladesh</p>
         </div>
     </section>
 
     <!-- different service center -->
     <div class=" bg-[#F5FFF6] max-w-[1800px] mx-auto py-12">
-        <div class="min-h-[1200px] grid grid-cols-4 gap-6 items-stretch">
+        <div class="min-h-[1200px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 items-stretch">
             <!-- জাতীয় জরুরি সেবা -->
-            <div class="bg-white shadow-lg text-center p-6 rounded-xl h-full flex flex-col justify-between">
-                <div class="flex justify-between items-center border border-red-600">
-                    <div class="bg-gray-200 p-3 rounded-xl"><img src="./assets/emergency.png" class="max-h-[40px]"
-                            alt="">
+            <div class=" bg-white shadow-lg text-center p-6 rounded-xl h-full flex flex-col justify-between">
+                <div class="flex justify-between items-center">
+                    <div class="bg-gray-100 p-2 rounded-xl"><img src="./assets/police.png" class="max-h-[40px]" alt="">
                     </div>
-                    <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
+                    <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i>
+                    </div>
                 </div>
                 <h2 id="name-national-emer" class="text-2xl font-bold text-start">জাতীয় জরুরি সেবা</h2>
                 <p class="text-start text-lg">National Emergency</p>
@@ -84,8 +82,8 @@
             </div>
             <!-- পুলিশ -->
             <div class=" bg-white shadow-lg text-center p-6 rounded-xl h-full flex flex-col justify-between">
-                <div class="flex justify-between items-center border border-red-600">
-                    <div class="bg-gray-200 p-3 rounded-xl"><img src="./assets/police.png" class="max-h-[40px]" alt="">
+                <div class="flex justify-between items-center">
+                    <div class="bg-gray-100 p-2 rounded-xl"><img src="./assets/police.png" class="max-h-[40px]" alt="">
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
@@ -94,7 +92,7 @@
                 <p id="call-police" class="text-start text-2xl font-bold">999</p>
                 <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">পুলিশ</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -106,8 +104,8 @@
             </div>
             <!-- ফায়ার সার্ভিস -->
             <div class=" bg-white shadow-lg text-center p-6 rounded-xl h-full flex flex-col justify-between">
-                <div class="flex justify-between items-center border border-red-600">
-                    <div class="bg-gray-200 p-3 rounded-xl"><img src="./assets/fire-service.png" class="max-h-[40px]"
+                <div class="flex justify-between items-center">
+                    <div class="bg-gray-100 p-2 rounded-xl"><img src="./assets/fire-service.png" class="max-h-[40px]"
                             alt="">
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
@@ -117,7 +115,7 @@
                 <p id="call-fire" class="text-start text-2xl font-bold">999</p>
                 <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">ফায়ার</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -128,146 +126,157 @@
                 </div>
             </div>
             <!-- call history -->
-            <div id="call-history-container" class=" row-span-3 bg-white shadow-lg border-none p-5 rounded-xl h-full">
-                <div class="flex justify-between items-center p-2">
-                    <div class="flex justify-between items-center gap-14">
+            <div id="call-history-container"
+                class="order-last md:order-none row-span-3 bg-white shadow-lg border-none p-3 md:p-5 rounded-xl h-full">
+                <div class="flex flex-col md:flex-row justify-between items-center p-2">
+
+                    <div class="flex justify-between items-center gap-4 md:gap-14">
                         <div class="flex justify-center items-center gap-2">
                             <i class="fa-regular fa-clock fa-2xl"></i>
-                            <h2 class="text-2xl font-semibold">Call History</h2>
+                            <h2 class="text-lg md:text-2xl font-semibold">Call History</h2>
                         </div>
 
                         <button id="clear-btn"
-                            class="w-[130px] h-[60px] rounded-full bg-[#00A63E] text-xl font-semibold text-white">Clear</button>
+                            class="w-[90px] h-[40px] md:w-[130px] md:h-[60px] rounded-full bg-[#00A63E] text-sm md:text-xl font-semibold text-white">
+                            Clear
+                        </button>
+
                     </div>
                 </div>
                 <ul id="call-history-list" class="list-none"></ul>
             </div>
             <!-- অ্যাম্বুলেন্স -->
             <div class=" bg-white shadow-lg text-center p-6 rounded-xl h-full flex flex-col justify-between">
-                <div class="flex justify-between items-center border border-red-600">
-                    <div class="bg-gray-200 p-3 rounded-xl"><img src="./assets/ambulance.png" class="max-h-[40px]"
+                <div class="flex justify-between items-center">
+                    <div class="bg-gray-100 p-2 rounded-xl"><img src="./assets/ambulance.png" class="max-h-[40px]"
                             alt="">
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 class="text-2xl font-bold text-start">অ্যাম্বুলেন্স</h2>
+                <h2 id="name-ambulance" class="text-2xl font-bold text-start">অ্যাম্বুলেন্স</h2>
                 <p class="text-start text-lg">Ambulance</p>
-                <p class="text-start text-2xl font-bold">1994-999999</p>
+                <p id="call-ambulance" class="text-start text-2xl font-bold">1994-999999</p>
                 <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">স্বাস্থ্য</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
-                    <button class="bg-[#00A63E] text-white h-10 w-full rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button id="btn-ambulance" class="bg-[#00A63E] text-white h-10 w-full rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call
                     </button>
                 </div>
             </div>
             <!-- নারী ও শিশু সহায়তা -->
             <div class=" bg-white shadow-lg text-center p-6 rounded-xl h-full flex flex-col justify-between">
-                <div class="flex justify-between items-center border border-red-600">
-                    <div class="bg-gray-200 p-3 rounded-xl"><img src="./assets/images.png" class="max-h-[40px]" alt="">
+                <div class="flex justify-between items-center">
+                    <div class="bg-gray-100 p-2 rounded-xl"><img src="./assets/images.png" class="max-h-[40px]" alt="">
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 class="text-2xl font-bold text-start">নারী ও শিশু সহায়তা</h2>
+                <h2 id="name-women" class="text-2xl font-bold text-start">নারী ও শিশু সহায়তা</h2>
                 <p class="text-start text-lg">Women & Child Helpline</p>
-                <p class="text-start text-2xl font-bold">109</p>
+                <p id="call-women" class="text-start text-2xl font-bold">109</p>
                 <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">সহায়তা</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
-                    <button class="bg-[#00A63E] text-white h-10 w-full rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button id="btn-women" class="bg-[#00A63E] text-white h-10 w-full rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call
                     </button>
                 </div>
             </div>
             <!-- দুদক -->
             <div class=" bg-white shadow-lg text-center p-6 rounded-xl h-full flex flex-col justify-between">
-                <div class="flex justify-between items-center border border-red-600">
-                    <div class="bg-gray-200 p-3 rounded-xl"><img src="./assets/Anti-Corruption-Commission-Logo.png"
+                <div class="flex justify-between items-center">
+                    <div class="bg-gray-100 p-2 rounded-xl"><img src="./assets/Anti-Corruption-Commission-Logo.png"
                             class="h-[40px] w-[40px]" alt="">
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 class="text-2xl font-bold text-start">দুদক</h2>
+                <h2 id="name-anti" class="text-2xl font-bold text-start">দুদক</h2>
                 <p class="text-start text-lg">Anti-Corruption</p>
-                <p class="text-start text-2xl font-bold">106</p>
+                <p id="call-anti" class="text-start text-2xl font-bold">106</p>
                 <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">সরকারি</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
-                    <button class="bg-[#00A63E] text-white h-10 w-full rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button id="btn-anti" class="bg-[#00A63E] text-white h-10 w-full rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call
                     </button>
                 </div>
             </div>
             <!-- বিদ্যুৎ বিভ্রাট -->
             <div class=" bg-white shadow-lg text-center p-6 rounded-xl h-full flex flex-col justify-between">
-                <div class="flex justify-between items-center border border-red-600">
-                    <div class="bg-gray-200 p-3 rounded-xl"><img src="./assets/BPDB_logo.png" class="max-h-[40px]"
+                <div class="flex justify-between items-center">
+                    <div class="bg-gray-100 p-2 rounded-xl"><img src="./assets/BPDB_logo.png" class="max-h-[40px]"
                             alt="">
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 class="text-2xl font-bold text-start">বিদ্যুৎ বিভ্রাট</h2>
+                <h2 id="name-ele" class="text-2xl font-bold text-start">বিদ্যুৎ বিভ্রাট</h2>
                 <p class="text-start text-lg">Electricity Outage</p>
-                <p class="text-start text-2xl font-bold">16216</p>
+                <p id="call-ele" class="text-start text-2xl font-bold">16216</p>
                 <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">বিদ্যুৎ</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
-                    <button class="bg-[#00A63E] text-white h-10 w-full rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button id="btn-ele" class="bg-[#00A63E] text-white h-10 w-full rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call
                     </button>
                 </div>
             </div>
             <!-- ব্র্যাক -->
             <div class=" bg-white shadow-lg text-center p-6 rounded-xl h-full flex flex-col justify-between">
-                <div class="flex justify-between items-center border border-red-600">
-                    <div class="bg-gray-200 p-3 rounded-xl"><img src="./assets/brac.png" class="max-h-[40px]" alt="">
+                <div class="flex justify-between items-center">
+                    <div class="bg-gray-100 p-2 rounded-xl"><img src="./assets/brac.png" class="max-h-[40px]" alt="">
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 class="text-2xl font-bold text-start">ব্র্যাক </h2>
+                <h2 id="name-brac" class="text-2xl font-bold text-start">ব্র্যাক </h2>
                 <p class="text-start text-lg">Brac</p>
-                <p class="text-start text-2xl font-bold">16445</p>
+                <p id="call-brac" class="text-start text-2xl font-bold">16445</p>
                 <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">এনজিও</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
-                    <button class="bg-[#00A63E] text-white h-10 w-full rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button id="btn-brac" class="bg-[#00A63E] text-white h-10 w-full rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call
                     </button>
                 </div>
             </div>
             <!-- বাংলাদেশ রেলওয়ে -->
             <div class=" bg-white shadow-lg text-center p-6 rounded-xl h-full flex flex-col justify-between">
-                <div class="flex justify-between items-center border border-red-600">
-                    <div class="bg-gray-200 p-3 rounded-xl"><img src="./assets/Bangladesh-Railway.png"
+                <div class="flex justify-between items-center">
+                    <div class="bg-gray-100 p-2 rounded-xl"><img src="./assets/Bangladesh-Railway.png"
                             class="max-h-[40px]" alt="">
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 class="text-2xl font-bold text-start">বাংলাদেশ রেলওয়ে </h2>
+                <h2 id="name-rail" class="text-2xl font-bold text-start">বাংলাদেশ রেলওয়ে </h2>
                 <p class="text-start text-lg">Bangladesh Railway</p>
-                <p class="text-start text-2xl font-bold">163</p>
+                <p id="call-rail" class="text-start text-2xl font-bold">163</p>
                 <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">পরিবহন</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
-                    <button class="bg-[#00A63E] text-white h-10 w-full rounded-lg"><i class="fa-solid fa-phone"></i>
+                    <button id="btn-rail" class="bg-[#00A63E] text-white h-10 w-full rounded-lg"><i
+                            class="fa-solid fa-phone"></i>
                         Call
                     </button>
                 </div>

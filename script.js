@@ -1,5 +1,4 @@
-
-     // Heart and Copy ‍Score
+// Heart and Copy ‍Score
 
 function numberInc(buttonClass, scoreBoardId) {
     const buttons = document.getElementsByClassName(buttonClass);
@@ -12,11 +11,10 @@ function numberInc(buttonClass, scoreBoardId) {
         });
     }
 }
-
 numberInc('img-heart', 'heart-score-board');
 numberInc('button-copy', 'copy-score-board');
 
-    // Clear History
+// Clear History
       const clearBtn = document.getElementById('clear-btn');
         const callHistoryList = document.getElementById('call-history-list');
 
@@ -73,5 +71,3 @@ calling("btn-anti", "call-anti", "name-anti");
 calling("btn-ele", "call-ele", "name-ele");
 calling("btn-brac", "call-brac", "name-brac");
 calling("btn-rail", "call-rail", "name-rail");
-
-
