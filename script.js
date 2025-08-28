@@ -50,7 +50,7 @@ numberInc('button-copy', 'copy-score-board');
         li.innerHTML = `
             <div class="flex flex-col">
                 <span class="font-semibold text-gray-800">${name}</span>
-                <span class="text-gray-600 text-center text-xl">${number}</span>            
+                <span class="text-gray-600 text-xl">${number}</span>            
             </div>
             <span class="text-gray-400 text-sm">${timeString}</span>
         `;
