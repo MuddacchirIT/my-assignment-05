@@ -32,7 +32,7 @@
                 </div>
                 <div
                     class="px-4 py-2 min-w-[100px] rounded-full bg-[#F5FFF6] shadow-lg flex justify-center items-center text-white text-lg font-semibold border border-gray-200 gap-3">
-                    <h2 class="font-bold text-black text-xl"><span id="icon-score-board">0</span></h2>
+                    <h2 class="font-bold text-black text-xl"><span id="icon-score-board">100</span></h2>
                     <img src="./assets/coin.png" class="max-h-[35px]" alt="">
                 </div>
                 <div class="px-4 py-3 min-w-[110px] rounded-full bg-[#00A63E] flex justify-center items
@@ -49,7 +49,7 @@
          flex flex-col items-center justify-center text-center text-white px-3 py-4">
             <img src="./assets/logo-dark.png" class="h-[80px] mb-2" alt="">
             <h1 class="text-2xl md:text-4xl font-bold mb-2 md:mb-4">Emergency Service Directory</h1>
-            <p class="font-semibold text-sm md:text-lg">Government Emergency Services at Your
+            <p class="font-semibold text-sm md:text-xl">Government Emergency Services at Your
                 Fingertip – A Project by Government
                 of the People’s Republic of Bangladesh</p>
         </div>
@@ -67,12 +67,13 @@
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i>
                     </div>
                 </div>
-                <h2 id="name-national-emer" class="text-2xl font-bold text-start">জাতীয় জরুরি সেবা</h2>
-                <p class="text-start text-lg">National Emergency</p>
+                <h2 class="text-2xl font-bold text-start">জাতীয় জরুরি সেবা</h2>
+                <p id="name-national-emer" class="text-start text-xl">National Emergency Service</p>
                 <p id="call-emer" class="text-start text-2xl font-bold">999</p>
-                <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">সার্বজনীন</button>
+                <button class="bg-gray-100 text-gray-600 w-3/11 py-1 rounded-2xl border-none text-lg">সার্বজনীন</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button id="btn-national-emer-copy"
+                        class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -90,12 +91,13 @@
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 id="name-police" class="text-2xl font-bold text-start">পুলিশ</h2>
-                <p class="text-start text-lg">Police</p>
+                <h2 class="text-2xl font-bold text-start">পুলিশ</h2>
+                <p id="name-police" class="text-start text-xl">Police</p>
                 <p id="call-police" class="text-start text-2xl font-bold">999</p>
-                <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">পুলিশ</button>
+                <button class="bg-gray-100 text-gray-600 w-2/10 py-1 rounded-2xl border-none text-lg">পুলিশ</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button id="btn-police-copy"
+                        class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -113,12 +115,13 @@
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 id="name-fire" class="text-2xl font-bold text-start">ফায়ার সার্ভিস</h2>
-                <p class="text-start text-lg">Fire Service</p>
+                <h2 class="text-2xl font-bold text-start">ফায়ার সার্ভিস</h2>
+                <p id="name-fire" class="text-start text-xl">Fire Service</p>
                 <p id="call-fire" class="text-start text-2xl font-bold">999</p>
-                <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">ফায়ার</button>
+                <button class="bg-gray-100 text-gray-600 w-1/5 py-1 rounded-2xl border-none text-lg">ফায়ার</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button id="btn-fire-copy"
+                        class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -132,18 +135,15 @@
             <div id="call-history-container"
                 class="order-last md:order-none row-span-3 bg-white shadow-lg border-none p-3 md:p-5 rounded-xl h-full">
                 <div class="flex flex-col md:flex-row justify-between items-center p-2">
-
                     <div class="flex justify-between items-center gap-4 md:gap-14">
                         <div class="flex justify-center items-center gap-2">
                             <i class="fa-regular fa-clock fa-2xl"></i>
                             <h2 class="text-lg md:text-2xl font-semibold">Call History</h2>
                         </div>
-
                         <button id="clear-btn"
                             class="w-[90px] h-[40px] md:w-[130px] md:h-[60px] rounded-full bg-[#00A63E] text-sm md:text-xl font-semibold text-white">
                             Clear
                         </button>
-
                     </div>
                 </div>
                 <ul id="call-history-list" class="list-none"></ul>
@@ -156,12 +156,13 @@
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 id="name-ambulance" class="text-2xl font-bold text-start">অ্যাম্বুলেন্স</h2>
-                <p class="text-start text-lg">Ambulance</p>
+                <h2 class="text-2xl font-bold text-start">অ্যাম্বুলেন্স</h2>
+                <p id="name-ambulance" class="text-start text-xl">Ambulance</p>
                 <p id="call-ambulance" class="text-start text-2xl font-bold">1994-999999</p>
-                <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">স্বাস্থ্য</button>
+                <button class="bg-gray-100 text-gray-600 w-1/5 py-1 rounded-2xl border-none text-lg">স্বাস্থ্য</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button id="btn-ambulance-copy"
+                        class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -178,12 +179,13 @@
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 id="name-women" class="text-2xl font-bold text-start">নারী ও শিশু সহায়তা</h2>
-                <p class="text-start text-lg">Women & Child Helpline</p>
+                <h2 class="text-2xl font-bold text-start">নারী ও শিশু সহায়তা</h2>
+                <p id="name-women" class="text-start text-xl">Women & Child Helpline</p>
                 <p id="call-women" class="text-start text-2xl font-bold">109</p>
-                <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">সহায়তা</button>
+                <button class="bg-gray-100 text-gray-600 w-3/12 py-1 rounded-2xl border-none text-lg">সহায়তা</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button id="btn-women-copy"
+                        class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -201,12 +203,13 @@
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 id="name-anti" class="text-2xl font-bold text-start">দুদক</h2>
-                <p class="text-start text-lg">Anti-Corruption</p>
+                <h2 class="text-2xl font-bold text-start">দুদক</h2>
+                <p id="name-anti" class="text-start text-xl">Anti-Corruption</p>
                 <p id="call-anti" class="text-start text-2xl font-bold">106</p>
-                <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">সরকারি</button>
+                <button class="bg-gray-100 text-gray-600 w-2/8 py-1 rounded-2xl border-none text-lg">সরকারি</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button id="btn-anti-copy"
+                        class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -224,12 +227,13 @@
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 id="name-ele" class="text-2xl font-bold text-start">বিদ্যুৎ বিভ্রাট</h2>
-                <p class="text-start text-lg">Electricity Outage</p>
+                <h2 class="text-2xl font-bold text-start">বিদ্যুৎ বিভ্রাট</h2>
+                <p id="name-ele" class="text-start text-xl">Electricity Outage</p>
                 <p id="call-ele" class="text-start text-2xl font-bold">16216</p>
-                <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">বিদ্যুৎ</button>
+                <button class="bg-gray-100 text-gray-600 w-1/5 py-1 rounded-2xl border-none text-lg">বিদ্যুৎ</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button id="btn-ele-copy"
+                        class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -246,12 +250,13 @@
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 id="name-brac" class="text-2xl font-bold text-start">ব্র্যাক </h2>
-                <p class="text-start text-lg">Brac</p>
+                <h2 class="text-2xl font-bold text-start">ব্র্যাক </h2>
+                <p id="name-brac" class="text-start text-xl">Brac</p>
                 <p id="call-brac" class="text-start text-2xl font-bold">16445</p>
-                <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">এনজিও</button>
+                <button class="bg-gray-100 text-gray-600 w-2/8 py-1 rounded-2xl border-none text-lg">এনজিও</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button id="btn-brac-copy"
+                        class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
@@ -269,12 +274,13 @@
                     </div>
                     <div class="img-heart"><i class="fa-regular fa-heart fa-2xl"></i></div>
                 </div>
-                <h2 id="name-rail" class="text-2xl font-bold text-start">বাংলাদেশ রেলওয়ে </h2>
-                <p class="text-start text-lg">Bangladesh Railway</p>
+                <h2 class="text-2xl font-bold text-start">বাংলাদেশ রেলওয়ে </h2>
+                <p id="name-rail" class="text-start text-xl">Bangladesh Railway</p>
                 <p id="call-rail" class="text-start text-2xl font-bold">163</p>
-                <button class="bg-gray-100 text-gray-600 w-1/5 rounded-2xl border-none text-lg">পরিবহন</button>
+                <button class="bg-gray-100 text-gray-600 w-3/11 py-1 rounded-2xl border-none text-lg">পরিবহন</button>
                 <div class="flex justify-between gap-4 py-2">
-                    <button class="button-copy bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
+                    <button id="btn-rail-copy"
+                        class="bg-white text-gray-600 h-10 w-full rounded-lg border border-gray-300"><i
                             class="fa-regular fa-copy"></i>
                         Copy
                     </button>
