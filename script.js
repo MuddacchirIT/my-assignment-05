@@ -86,11 +86,11 @@ function copying(buttonId, numberId, nameId, scoreBoardId) {
         const nameElement = document.getElementById(nameId);
         const number = numberElement.innerText;
         const name = nameElement.innerText;
-        alert(`Calling ${name} ${number}`);
+        alert(`There has already copied!`);
 
-        navigator.clipboard.writeText(`${name} - ${number}`)
+        navigator.clipboard.writeText(`${name}, Phone no. ${number}`)
         .then(() => {
-            alert(`${name} ${number} copied to clipboard!`);
+            alert(`${name}, Phone no. is ${number} copied to clipboard!`);
         })
         .catch(err => {
             alert('Failed to copy!');
