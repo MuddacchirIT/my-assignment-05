@@ -40,16 +40,14 @@ numberInc('button-copy', 'copy-score-board');
         const number = numberElement.innerText;
         const name = nameElement.innerText;
 
-        alert(`Calling ${name} ${number}`);
-
-         if (coins >= 20) {
+        if (coins >= 20) {
             coins -= 20;
             coinScoreBoard.innerText = coins;
         } else {
-            alert("You have no available Coins!");
+            alert("Sorry! You have no available Coins.");
             return; 
         }
-
+        alert(`Calling ${name} ${number}...`);
         const now = new Date();
         const timeString = now.toLocaleString( 'en-US',{
             hour: 'numeric', 
@@ -57,9 +55,7 @@ numberInc('button-copy', 'copy-score-board');
             second: 'numeric',
             hour12: true
         })
-
         callHistory.push({ name: name, number: number, time: timeString });
-
         const callHistoryList = document.getElementById("call-history-list");
         const li = document.createElement("li");
         li.innerHTML = `
@@ -78,25 +74,18 @@ numberInc('button-copy', 'copy-score-board');
     });
 }
 
-function copying(buttonId, numberId, nameId, scoreBoardId) {
+function copying(buttonId, numberId, scoreBoardId) {
     document.getElementById(buttonId).addEventListener('click', function(e) {
         e.preventDefault();
 
         const numberElement = document.getElementById(numberId);
-        const nameElement = document.getElementById(nameId);
         const number = numberElement.innerText;
-        const name = nameElement.innerText;
-        alert(`There has already copied!`);
+        alert(`Number has been copied: ${number}`);
 
-        navigator.clipboard.writeText(`${name}, Phone no. ${number}`)
+        navigator.clipboard.writeText(`${number}`)
         .then(() => {
-            alert(`${name}, Phone no. is ${number} copied to clipboard!`);
-        })
-        .catch(err => {
-            alert('Failed to copy!');
-            console.error(err);
+            (`${number}`);
         });
-
         const point = 1;
         const availdPoint = parseInt(document.getElementById(scoreBoardId).innerText) || 0;
         document.getElementById(scoreBoardId).innerText = availdPoint + point;
@@ -113,12 +102,12 @@ calling("btn-ele", "call-ele", "name-ele");
 calling("btn-brac", "call-brac", "name-brac");
 calling("btn-rail", "call-rail", "name-rail");
 
-copying("btn-national-emer-copy", "call-emer", "name-national-emer","copy-score-board");
-copying("btn-police-copy", "call-police", "name-police","copy-score-board");
-copying("btn-fire-copy", "call-fire", "name-fire", "copy-score-board");
-copying("btn-ambulance-copy", "call-ambulance", "name-ambulance","copy-score-board");
-copying("btn-women-copy", "call-women", "name-women","copy-score-board");
-copying("btn-anti-copy", "call-anti", "name-anti","copy-score-board");
-copying("btn-ele-copy", "call-ele", "name-ele","copy-score-board");
-copying("btn-brac-copy", "call-brac", "name-brac","copy-score-board");
-copying("btn-rail-copy", "call-rail", "name-rail","copy-score-board");
+copying("btn-national-emer-copy", "call-emer", "copy-score-board");
+copying("btn-police-copy", "call-police", "copy-score-board");
+copying("btn-fire-copy", "call-fire", "copy-score-board");
+copying("btn-ambulance-copy", "call-ambulance", "copy-score-board");
+copying("btn-women-copy", "call-women", "copy-score-board");
+copying("btn-anti-copy", "call-anti", "copy-score-board");
+copying("btn-ele-copy", "call-ele", "copy-score-board");
+copying("btn-brac-copy", "call-brac", "copy-score-board");
+copying("btn-rail-copy", "call-rail", "copy-score-board");
