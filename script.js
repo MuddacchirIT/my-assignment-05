@@ -1,4 +1,4 @@
-// Heart and Copy ‍Score
+    // Heart and Copying ‍Score
 
 function numberInc(buttonClass, scoreBoardId) {
     const buttons = document.getElementsByClassName(buttonClass);
@@ -14,7 +14,7 @@ function numberInc(buttonClass, scoreBoardId) {
 numberInc('img-heart', 'heart-score-board');
 numberInc('button-copy', 'copy-score-board');
 
-// Clear History
+    // Clear History
       const clearBtn = document.getElementById('clear-btn');
         const callHistoryList = document.getElementById('call-history-list');
 
@@ -24,7 +24,7 @@ numberInc('button-copy', 'copy-score-board');
         callHistory = [];
     });
   
-    // Call & History
+    // Calling & History
     
     let callHistory = [];
     let coins = 100;
